@@ -1,2 +1,4 @@
-<h1>Books#index</h1>
-<p>Find me in app/views/books/index.html.erb</p>
+<%= form_with model: Book.new do |f| %>
+  <%= f.label :title, 'Title' %>
+  <%= f.text_field :title %>
+<% end%>
