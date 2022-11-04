@@ -1,4 +1,6 @@
 <%= form_with model: Book.new do |f| %>
   <%= f.label :title, 'Title' %>
   <%= f.text_field :title %>
+  <%= f.label model :body, 'Opinion' %>
+  <%= f.submit 'Create Book' %>
 <% end%>
