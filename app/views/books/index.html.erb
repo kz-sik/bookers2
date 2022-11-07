@@ -2,22 +2,18 @@
   <div class="row">
     <div class="col-md-5">
       <h2>User info</h2>
-
-      <%　if @user.image.present? %>
-        <%= image_tag %>
-      <% else %>
-        <%= image_tag %>
-      <% end %>
-
+      
+      
+      
       <table>
         <tbody>
           <tr>
             <th>name</th>
-            <th></th>
+            <th><%= @user.name %></th>
           </tr>
           <tr>
             <th>introduction</th>
-            <th></th>
+            <th><%= @user.introduction %></th>
           </tr>
         </tbody>
       </table>
