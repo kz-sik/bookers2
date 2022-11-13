@@ -3,12 +3,12 @@
 </div>
 <div class="container px-5 px-sm-0">
   <div class="row">
-    <%= render 'userinfo', user: @user, book: @book_new %>
+    <%= render 'userinfo', user: @users, book: @book_new %>
     <div class="col-md-8 offset-md-1">
       <h2>Book detail</h2>
       <table class="table table-hover table-inverse">
         <td>
-          <%= link_to user_path(@user_find.id) do %>
+          <%= link_to user_path(@users.id) do %>
           <%= image_tag @book.user.get_profile_image(100, 100) %><br>
           <%= @book.user.name %>
           <% end %>
